@@ -16,7 +16,7 @@ exports.all = function(req, res) {
 	  {
 	    console.log("api called");
 	    res.render('./../public/views/article/all.ejs',{
-	   user: req.user || null,
+	     user: req.user || null,
 		request: req,
 		articles:data
 	      

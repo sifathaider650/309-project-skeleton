@@ -80,6 +80,7 @@ exports.signinView = function(req, res) {
 exports.signout = function(req, res) {
 	req.logout(function(){
 		if(err){
+			
 		}
 	});
 	res.status(200).send({message:"signed out"});
