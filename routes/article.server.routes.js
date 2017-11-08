@@ -18,8 +18,7 @@ module.exports = function(app){
 		app.route('/articles/:articleId')
 	.get(articles.create);
 	
-		app.route('/articles/:articleId')
-	.get(articles.Article);
+
 	
  app.route('/api/articles')
 	.get(articles.list)
