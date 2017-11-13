@@ -8,9 +8,11 @@
         <h1>
             View Products
         </h1>
-         <% console.log(request.Product)%>
-         <h2>Title: <%= request.Product.title %></h2>
-         <p> <%= request.Product.content %></p>
+         <% console.log(request.product)%>
+         <h2>Name: <%= request.product.name %></h2>
+         <p> <%= request.product.description %></p>
+         <h4>Price: <%= request.product.price %></h4>
+         <h4>Quentity: <%= request.product.quantity %></h4>
     </body>
     
 </html>
