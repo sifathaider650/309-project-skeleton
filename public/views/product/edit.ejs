@@ -40,7 +40,8 @@ $("#name").change(function()
             
              $("#price").change(function()
             {
-                product.price= $("#price").val();
+                
+                //product.price= $("#price").val();
             
             });
             
@@ -59,6 +60,9 @@ $("#name").change(function()
                     
                 }).done(function(response){
                     console.log(response);
+                    window.location.replace("/products/"+response._id); 
+                }).fail(function(response){
+                   console.log(response); 
                 });
                 
             });
